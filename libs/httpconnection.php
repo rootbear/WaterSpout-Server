@@ -358,6 +358,7 @@ class HTTPConnection
 			}
 			else
 			{
+				//missed parameter for function handshake
 				$this->write($this->_request->handshake());
 	
 				call_user_func($this->_request_callback, $this->_request);
